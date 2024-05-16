@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disaster tweets Classification</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        button {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Disaster tweets Classification</h1>
+    <from method="post" action="/predict">
+        <textarea
+        name="text-content"
+        placeholder="Enter your text here"
+        rows="15"
+        cols="50"
+        >
+        {{text}}</textarea
+        >
+        <div>
+        <button>Submit</button>
+        <a href="/">Reset</a>
+    </div>
+</from>
+<h2>Prediction:{{Prediction}}</h2>
+</body>
+</html>
+    
